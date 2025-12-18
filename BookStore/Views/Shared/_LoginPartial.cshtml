@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUserModel> SignInManager
+@inject UserManager<AppUserModel> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <a asp-action="Logout" asp-controller="Account" class="btn btn-outline-primary ms-2">Đăng xuất</a>
+}
+else
+{
+    <a asp-action="Login" asp-controller="Account" class="btn btn-outline-primary ms-2">Đăng nhập</a>
+}

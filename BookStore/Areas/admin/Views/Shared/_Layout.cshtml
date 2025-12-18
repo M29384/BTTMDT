@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin - BookStore</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 240px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: #343a40;
+            color: #fff;
+            padding-top: 1rem;
+        }
+
+            .sidebar a {
+                color: #adb5bd;
+                text-decoration: none;
+                display: block;
+                padding: .5rem 1rem;
+                border-radius: 4px;
+            }
+
+                .sidebar a:hover, .sidebar a.active {
+                    background: #495057;
+                    color: #fff;
+                }
+
+        .content {
+            margin-left: 240px;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="text-center mb-4">Admin Panel</h4>
+        <a href="#dashboard" class="active"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+        <a href="#books"><i class="bi bi-book me-2"></i>Sách</a>
+        <a href="#orders"><i class="bi bi-bag-check me-2"></i>Đơn hàng</a>
+        <a href="#users"><i class="bi bi-people me-2"></i>Người dùng</a>
+        <a href="#reports"><i class="bi bi-graph-up me-2"></i>Báo cáo</a>
+        <a href="#settings"><i class="bi bi-gear me-2"></i>Cài đặt</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 shadow-sm rounded">
+            <div class="container-fluid">
+                <span class="navbar-brand">BookStore Admin</span>
+                <div class="d-flex">
+                    <a href="/" class="btn btn-outline-primary btn-sm me-2">Trang chủ</a>
+                </div>
+            </div>
+        </nav>
+        @RenderBody()
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

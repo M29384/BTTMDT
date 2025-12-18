@@ -1,0 +1,24 @@
+
+body {
+      background: linear-gradient(135deg,#f8fafc 0%, #eef2ff 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .login-card {
+      max-width: 420px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 30px rgba(20,20,50,0.08);
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: .4px;
+    }

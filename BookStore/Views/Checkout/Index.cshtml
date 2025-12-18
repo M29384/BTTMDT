@@ -1,0 +1,53 @@
+﻿<div class="container mt-5">
+    <h2 class="mb-4">Thanh Toán Đơn Hàng</h2>
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Thông tin giao hàng</h5>
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Họ tên</label>
+                    <input type="text" class="form-control" id="fullname" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Số điện thoại</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Địa chỉ</label>
+                    <input type="text" class="form-control" id="address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="note" class="form-label">Ghi chú (tuỳ chọn)</label>
+                    <textarea class="form-control" id="note" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5>Phương thức thanh toán</h5>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="payment" id="cod" checked>
+                    <label class="form-check-label" for="cod">Thanh toán khi nhận hàng (COD)</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="payment" id="vnpay">
+                    <label class="form-check-label" for="vnpay">Thanh toán qua VNPAY</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="payment" id="paypal">
+                    <label class="form-check-label" for="paypal">Thanh toán qua PayPal</label>
+                </div>
+                <h5 class="mt-4">Tóm tắt đơn hàng</h5>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Đắc Nhân Tâm x1</span>
+                        <strong>120.000đ</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Tổng cộng</span>
+                        <strong class="text-danger">120.000đ</strong>
+                    </li>
+                </ul>
+                <button type="submit" class="btn btn-success btn-lg w-100">Xác nhận đặt hàng</button>
+            </div>
+        </div>
+    </form>
+</div>

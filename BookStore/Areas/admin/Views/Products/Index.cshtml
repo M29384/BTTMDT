@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ProductModel>
+
+        <!-- Books management -->
+        <section id="books">
+            <h3>Quản lý sách</h3>
+            <a class="btn btn-primary mb-3" asp-action="Create" asp-controller="Products">
+                <i class="bi bi-plus-circle"></i> Thêm sản phẩm
+            </a>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hình ảnh</th>
+                        <th>Tiêu đề</th>
+                        <th>Tác giả</th>
+                        <th>Giá</th>
+                        <th>Tồn kho</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.ProductId</td>
+                        <td><img src="/assets/images/@item.ImageUrl" style="width: 50px; height: auto;"></td>
+                        <td>@item.ProductName</td>
+                        <td>@item.TenTg</td>
+                        <td>@item.Price</td>
+                        <td>@item.Soluong</td>
+                        <td>
+                            <a class="btn btn-sm btn-warning" asp-action="Edit" asp-controller="Products" asp-route-Id="@item.ProductId">Sửa</a>
+                            <a class="btn btn-sm btn-danger" asp-action="Delete" asp-controller="Products" asp-route-Id="@item.ProductId">Xóa</a>
+                        </td>
+                    </tr>
+                        }
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    

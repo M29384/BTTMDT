@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhà Sách Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/login.css" rel="stylesheet" />
+    <link href="~/assets/css/register.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold"asp-action="index" asp-controller="Home">BookStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" asp-action="index" asp-controller="Home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="index" asp-controller="Category">Danh mục</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="index" asp-controller="Cart">Giỏ hàng</a></li>
+                </ul>
+                <form class="d-flex me-2"   >
+                    <input class="form-control me-2" type="text" name="seachTerm" placeholder="Tìm sách...">
+                    <button class="btn btn-outline-success" type="submit">Tìm</button>
+                </form>
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+   @RenderBody()
+  
+        <!-- Footer -->
+        <footer class="bg-light text-center py-4 mt-5">
+            <p>&copy; Nguyễn Trung Nguyên - Nguyễn Thị Bích Ngọc</p>
+    </footer>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/login.js"></script>
+    <script src="~/assets/js/register.js"></script>
+</body>
+</html>

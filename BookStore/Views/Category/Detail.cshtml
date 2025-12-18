@@ -1,0 +1,36 @@
+﻿
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Ảnh sách -->
+            <div class="col-md-5">
+            <img src="~/assets/images/@Model.ImageUrl" class="img-fluid rounded mb-3" alt="Sách">  
+            </div>
+            <!-- Thông tin sách -->
+            <div class="col-md-7">
+                <h2>@Model.ProductName</h2>
+                <p class="text-muted">Tác giả: @Model.TenTg | Nhà xuất bản: @Model.NhaXuatBan</p>
+                <div class="mb-3">
+                    <span class="h4 text-danger me-2">@Model.Price đ</span>
+                </div>
+                <div>
+                    <h4>Mô tả sản phẩm:</h4>
+                    <p class="mb-4">@Model.Description</p>
+                </div>
+                <div class="mb-4">
+                    <label for="quantity" class="form-label">Số lượng: @Model.Soluong</label>   
+                </div>
+            <a class="btn btn-primary btn-lg mb-3 me-2" asp-action="Add" asp-controller="Cart" asp-route-id="@Model.ProductId"><i class="bi bi-cart-plus"></i> Thêm vào giỏ</a>
+                <div class="mt-4">
+                    <h5>Thông tin chi tiết:</h5>
+                    <ul>
+                        <li>Số trang: 320</li>
+                        <li>Kích thước: 14x20.5cm</li>
+                        <li>Hình thức: Bìa mềm</li>
+                        <li>Năm phát hành: @Model.Nxb</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+

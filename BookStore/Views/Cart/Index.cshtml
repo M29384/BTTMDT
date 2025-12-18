@@ -1,0 +1,68 @@
+﻿@using BookStore.Models.ViewModels;
+@model CartView;
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Giỏ Hàng Của Bạn</h2>
+    <table class="table table-hover align-middle">
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Đơn Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.cartItems.Count > 0)
+            {
+                @foreach (var item in Model.cartItems)
+                 {
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/@item.imageUrl" class="img-thumbnail me-2" style="width: 60px;">
+                            <div>
+                                <h6 class="mb-0">@item.ProductName</h6>
+                                <small class="text-muted">@item.tenTg</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>@item.Price</td>
+                    <td>
+                            <a class="btn btn-outline-secondary btn-sm" asp-controller="Cart" asp-action="Decrease" asp-route-id="@item.ProductId">-</a>                        
+                        <input type="number" class="form-control text-center" value="@item.Soluong" min="1" style="width: 70px;">
+                            <a class="btn btn-outline-secondary btn-sm" asp-controller="Cart" asp-action="Increase" asp-route-id="@item.ProductId">+</a>
+
+                        <td class="text-danger"><strong>@Model.cartItems.Where(x => x.ProductId == @item.ProductId).Sum(x => x.Soluong * x.Price).ToString()</strong></td>
+                 
+                    <td>
+                            <a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="Remove" asp-route-id="@item.ProductId">Xóa</a>
+                    </td>
+                </tr>
+                }
+                <tr>
+                    <td colspan="3" class="text-end"><strong>Tổng cộng:</strong></td>
+                    <td class="text-danger"><strong>@Model.totalprice.ToString()</strong></td>
+                    <td></td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center">Giỏ hàng của bạn đang trống.</td>
+                </tr>
+            }
+            <!-- Thêm các sản phẩm khác -->
+                </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="text-end">
+                    
+                    <a asp-controller="Checkout" class="btn btn-success">Thanh toán <i class="bi bi-arrow-right"></i></a>
+                </td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <a asp-controller="Category" class="btn btn-outline-warning"><i class="bi bi-arrow-left"></i> Tiếp tục mua hàng</a>
+</div>
