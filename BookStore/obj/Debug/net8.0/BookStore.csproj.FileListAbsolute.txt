@@ -257,3 +257,4 @@ C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\obj\Debug\net8.0\swae.build.ex.cache
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\obj\Debug\net8.0\BookStore.sourcelink.json
