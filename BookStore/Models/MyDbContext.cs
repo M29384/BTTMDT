@@ -17,6 +17,8 @@ public partial class MyDbContext : IdentityDbContext<AppUserModel>
     public virtual DbSet<CategoryModel> Categories { get; set; }
 
     public virtual DbSet<ProductModel> Products { get; set; }
+    public DbSet<OrderModel> Orders { get; set; }
+    public DbSet<OrderDetail> orderDetails { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

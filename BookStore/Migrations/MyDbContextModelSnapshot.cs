@@ -144,6 +144,58 @@ namespace BookStore.Migrations
                     b.ToTable("category", (string)null);
                 });
 
+            modelBuilder.Entity("BookStore.Models.OrderDetail", b =>
+                {
+                    b.Property<int?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("Id"));
+
+                    b.Property<string>("OrderCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Soluong")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("orderDetails");
+                });
+
+            modelBuilder.Entity("BookStore.Models.OrderModel", b =>
+                {
+                    b.Property<int?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("BookStore.Models.ProductModel", b =>
                 {
                     b.Property<int>("ProductId")
@@ -334,6 +386,15 @@ namespace BookStore.Migrations
                         .WithMany("Carts")
                         .HasForeignKey("ProductId")
                         .HasConstraintName("FK__carts__productID__3C69FB99");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("BookStore.Models.OrderDetail", b =>
+                {
+                    b.HasOne("BookStore.Models.ProductModel", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId");
 
                     b.Navigation("Product");
                 });

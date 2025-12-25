@@ -1,0 +1,32 @@
+﻿@model IEnumerable<OrderDetail>
+<section id="books">
+    <h3>Quản lý đơn hàng</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Order Code</th>
+                <th>UserName</th>
+                <th>Order Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.OrderCode</td>
+                    <td>@item.UserName</td>
+                    <td>@item</td>
+                    <td>
+                        <a class="btn btn-sm btn-warning" asp-action="ViewOrder" asp-controller="Order" asp-route-Id="@item.OrderCode">Xem</a>
+                        <a class="btn btn-sm btn-danger" asp-action="Delete" asp-controller="Order" asp-route-Id="@item.Id">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+</div>
+
+

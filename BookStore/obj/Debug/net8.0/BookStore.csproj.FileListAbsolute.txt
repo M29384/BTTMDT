@@ -258,3 +258,13 @@ C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\obj\Debug\net8.0\BookStore.sourcelink.json
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

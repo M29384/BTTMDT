@@ -2,7 +2,6 @@ wwwroot\assets\css\bootstrap.min.css
 wwwroot\assets\css\login.css
 wwwroot\assets\css\register.css
 wwwroot\assets\css\style.css
-wwwroot\assets\images\71827216-41ec-4c5e-863b-ad1a4a9cf631.jpg
 wwwroot\assets\images\Banner1.jpg
 wwwroot\assets\images\Banner2.jpg
 wwwroot\assets\images\Banner3.jpg

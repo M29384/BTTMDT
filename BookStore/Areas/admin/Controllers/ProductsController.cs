@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using System.IO;
-using System.Data; // added for IsolationLevel
+using System.Data; 
 
 namespace BookStore.Areas.Admin.Controllers
 {
