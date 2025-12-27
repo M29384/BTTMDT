@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ProductModel>
+<div class="container mt-4">
+    <!-- Bộ lọc -->
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <select class="form-select">
+                <option selected>Sắp xếp theo</option>
+                <option value="1">Giá tăng dần</option>
+                <option value="2">Giá giảm dần</option>
+                <option value="3">Mới nhất</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select class="form-select">
+                <option selected>Thể loại</option>
+                <option value="1">Văn học</option>
+                <option value="2">Lịch sử</option>
+                <option value="3">Manga-Comic</option>
+            </select>
+        </div>
+    </div>
+    <!-- Danh sách sách -->
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Card sản phẩm (tương tự trang chủ) -->
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="~/assets/images/@item.ImageUrl" class="card-img-top" alt="Sách 1">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProductName</h5>
+                        <p class="card-text">@item.TenTg</p>
+                        <p class="h6 text-danger">@item.Price đ</p>
+                        <a asp-action="Detail" asp-controller="Category" asp-route-id="@item.ProductId" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
+                        <a asp-action="Add" asp-controller="Cart" asp-route-Id="@item.ProductId" class="btn btn-primary btn-sm ms-2">Thêm vào giỏ</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+    <!-- Phân trang -->
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">Trước</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+        </ul>
+    </nav>
+</div>

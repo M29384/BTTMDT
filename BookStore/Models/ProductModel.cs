@@ -25,7 +25,7 @@ public partial class ProductModel
 
     public int? CategoryId { get; set; }
 
-    public string? Nxb { get; set; }
+    public DateOnly? Nxb { get; set; }
 
     public virtual ICollection<CartModel> Carts { get; set; } = new List<CartModel>();
 

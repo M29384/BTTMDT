@@ -219,8 +219,8 @@ namespace BookStore.Migrations
                         .HasColumnType("nvarchar(10)")
                         .HasColumnName("nhaXuatBan");
 
-                    b.Property<string>("Nxb")
-                        .HasColumnType("nvarchar(max)")
+                    b.Property<DateOnly?>("Nxb")
+                        .HasColumnType("date")
                         .HasColumnName("NXB");
 
                     b.Property<decimal?>("Price")

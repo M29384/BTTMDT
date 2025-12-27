@@ -3,16 +3,19 @@
     <!-- Bộ lọc -->
     <form asp-action="Sort" asp-controller="Category" method="get">
         <div class="row mb-3">
+            <!-- Sắp xếp theo -->
             <div class="col-md-3">
-                <select class="form-select" class="form-select" name="categoryId" id="categoryId" onchange="this.form.submit()">
+                <select class="form-select" name="sortOrder" id="sortOrder" onchange="this.form.submit()">
                     <option selected>Sắp xếp theo</option>
                     <option value="asc">Giá tăng dần</option>
                     <option value="desc">Giá giảm dần</option>
                     <option value="new">Mới nhất</option>
                 </select>
             </div>
+
+            <!-- Thể loại -->
             <div class="col-md-3">
-                <select class="form-select" class="form-select" name="categoryId" id="categoryId" onchange="this.form.submit()">
+                <select class="form-select" name="categoryId" id="categoryId" onchange="this.form.submit()">
                     <option selected>Thể loại</option>
                     <option value="1">Văn học</option>
                     <option value="2">Lịch sử</option>
@@ -28,16 +31,16 @@
         {
             <div class="col">
                 <div class="card h-100">
-                <img src="~/assets/images/@item.ImageUrl" class="card-img-top" alt="Sách 1">
-                <div class="card-body">
-                    <h5 class="card-title">@item.ProductName</h5>
-                    <p class="card-text">@item.TenTg</p>
-                    <p class="h6 text-danger">@item.Price đ</p>
-                    <a asp-action="Detail" asp-controller="Category" asp-route-id="@item.ProductId" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
+                    <img src="~/assets/images/@item.ImageUrl" class="card-img-top" alt="Sách 1">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProductName</h5>
+                        <p class="card-text">@item.TenTg</p>
+                        <p class="h6 text-danger">@item.Price đ</p>
+                        <a asp-action="Detail" asp-controller="Category" asp-route-id="@item.ProductId" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
                         <a asp-action="Add" asp-controller="Cart" asp-route-Id="@item.ProductId" class="btn btn-primary btn-sm ms-2">Thêm vào giỏ</a>
+                    </div>
                 </div>
             </div>
-        </div>
         }
     </div>
     <!-- Phân trang -->

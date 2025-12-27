@@ -268,3 +268,6 @@ C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\X.PagedList.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+C:\Users\nguye\OneDrive\Tài liệu\Bai kiem tra cuoi ky TMDT va SQL\BookStore_asp\BookStore\BookStore\obj\Debug\net8.0\BookStore.MvcApplicationPartsAssemblyInfo.cs

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20251225081801_smallchange2")]
-    partial class smallchange2
+    [Migration("20251227071943_Smallupdate3")]
+    partial class Smallupdate3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -222,8 +222,8 @@ namespace BookStore.Migrations
                         .HasColumnType("nvarchar(10)")
                         .HasColumnName("nhaXuatBan");
 
-                    b.Property<string>("Nxb")
-                        .HasColumnType("nvarchar(max)")
+                    b.Property<DateOnly?>("Nxb")
+                        .HasColumnType("date")
                         .HasColumnName("NXB");
 
                     b.Property<decimal?>("Price")
