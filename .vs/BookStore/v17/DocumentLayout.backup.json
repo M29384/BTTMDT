@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BookStore\\Views\\Shared\\_Layout.cshtml",
@@ -35,7 +35,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "BookStore\\Views\\Category\\Index.cshtml",
