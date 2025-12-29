@@ -1,12 +1,103 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\views\\category\\sort.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\category\\sort.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\bai kiem tra cuoi ky tmdt va sql\\bookstore_asp\\bookstore\\bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1ED516EE-C193-4C48-80A8-AE6C2A44F530}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sort.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Category\\Sort.cshtml",
+              "RelativeDocumentMoniker": "BookStore\\Views\\Category\\Sort.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Category\\Sort.cshtml",
+              "RelativeToolTip": "BookStore\\Views\\Category\\Sort.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-29T04:51:27.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookStore\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "BookStore\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-29T04:51:17.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\appsettings.json",
+              "RelativeDocumentMoniker": "BookStore\\appsettings.json",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\appsettings.json",
+              "RelativeToolTip": "BookStore\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-27T17:07:11.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BookStore\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BookStore\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T08:35:03.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookStore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Bai kiem tra cuoi ky TMDT va SQL\\BookStore_asp\\BookStore\\BookStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookStore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T07:50:30.613Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -27,7 +27,11 @@
                             </div>
                         </div>
                     </td>
-                    <td>@item.Price</td>
+                        <td>
+                            <p class="h6 text-danger">
+                                @(string.Format("{0:N0}", item.Price)) đ
+                            </p>
+                        </td>
                     <td>
                             <a class="btn btn-outline-secondary btn-sm" asp-controller="Cart" asp-action="Decrease" asp-route-id="@item.ProductId">-</a>                        
                         <input type="number" class="form-control text-center" value="@item.Soluong" min="1" style="width: 70px;">

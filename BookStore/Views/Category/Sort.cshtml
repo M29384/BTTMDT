@@ -35,7 +35,10 @@
                     <div class="card-body">
                         <h5 class="card-title">@item.ProductName</h5>
                         <p class="card-text">@item.TenTg</p>
-                        <p class="h6 text-danger">@item.Price đ</p>
+                        <p class="h6 text-danger">
+                            @(string.Format("{0:N0}", item.Price)) đ
+                        </p>
+
                         <a asp-action="Detail" asp-controller="Category" asp-route-id="@item.ProductId" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
                         <a asp-action="Add" asp-controller="Cart" asp-route-Id="@item.ProductId" class="btn btn-primary btn-sm ms-2">Thêm vào giỏ</a>
                     </div>
