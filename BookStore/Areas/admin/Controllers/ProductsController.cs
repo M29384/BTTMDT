@@ -132,7 +132,7 @@ namespace BookStore.Areas.Admin.Controllers
                         var oldPath = Path.Combine(_env.WebRootPath ?? string.Empty, "assets", "images", dbProduct.ImageUrl);
                         if (System.IO.File.Exists(oldPath))
                         {
-                            try { System.IO.File.Delete(oldPath); } catch { }
+                            try { System.IO.File.Delete(oldPath); } catch { /* ignore */ }
                         }
                     }
                     dbProduct.ImageUrl = fileName;
@@ -194,7 +194,7 @@ namespace BookStore.Areas.Admin.Controllers
                     var path = Path.Combine(_env.WebRootPath ?? string.Empty, "assets", "images", product.ImageUrl);
                     if (System.IO.File.Exists(path))
                     {
-                        try { System.IO.File.Delete(path); } catch { }
+                        try { System.IO.File.Delete(path); } catch { /* ignore */ }
                     }
                 }
 
