@@ -45,7 +45,6 @@ namespace BookStore.Areas.Admin.Controllers
                 return View(product);
             }
 
-            // handle upload
             if (product.ImageUpload != null)
             {
                 var fileName = await SaveImageAsync(product.ImageUpload);
@@ -55,9 +54,6 @@ namespace BookStore.Areas.Admin.Controllers
                 }
             }
 
-            // If your database does not generate ids automatically (no IDENTITY),
-            // assign the next numeric id in a serializable transaction to reduce races.
-            // If your DB already uses IDENTITY/auto-increment, remove this block and let the DB generate the id.
             await using (var tx = await _context.Database.BeginTransactionAsync(IsolationLevel.Serializable))
             {
                 try
@@ -115,7 +111,7 @@ namespace BookStore.Areas.Admin.Controllers
             var dbProduct = await _context.Products.FindAsync(id);
             if (dbProduct == null) return NotFound();
 
-            // update scalar properties
+
             dbProduct.ProductName = product.ProductName;
             dbProduct.TenTg = product.TenTg;
             dbProduct.NhaXuatBan = product.NhaXuatBan;
@@ -125,19 +121,18 @@ namespace BookStore.Areas.Admin.Controllers
             dbProduct.Description = product.Description;
             dbProduct.CategoryId = product.CategoryId;
 
-            // handle image upload: replace and delete old file
             if (product.ImageUpload != null)
             {
                 var fileName = await SaveImageAsync(product.ImageUpload);
                 if (fileName != null)
                 {
-                    // delete old file if it exists and is not empty
+
                     if (!string.IsNullOrEmpty(dbProduct.ImageUrl))
                     {
                         var oldPath = Path.Combine(_env.WebRootPath ?? string.Empty, "assets", "images", dbProduct.ImageUrl);
                         if (System.IO.File.Exists(oldPath))
                         {
-                            try { System.IO.File.Delete(oldPath); } catch { /* ignore */ }
+                            try { System.IO.File.Delete(oldPath); } catch { }
                         }
                     }
                     dbProduct.ImageUrl = fileName;
@@ -145,7 +140,6 @@ namespace BookStore.Areas.Admin.Controllers
             }
             else
             {
-                // if user cleared ImageUrl in the form, keep or set as needed
                 dbProduct.ImageUrl = product.ImageUrl;
             }
 
@@ -200,7 +194,7 @@ namespace BookStore.Areas.Admin.Controllers
                     var path = Path.Combine(_env.WebRootPath ?? string.Empty, "assets", "images", product.ImageUrl);
                     if (System.IO.File.Exists(path))
                     {
-                        try { System.IO.File.Delete(path); } catch { /* ignore */ }
+                        try { System.IO.File.Delete(path); } catch { }
                     }
                 }
 
